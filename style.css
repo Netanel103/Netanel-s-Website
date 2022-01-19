@@ -66,6 +66,12 @@ li{
     z-index: -1;
 }
 
+@media only screen and (max-width: 1920px) {
+    .header img {
+        width: 90rem;
+    }
+}
+
 @media only screen and (max-width: 996px){
     .header {
         min-height: 60vh;
