@@ -61,11 +61,11 @@ new TypeIt("#type1", {
   waitUntilVisible: true,
 })
   .type("Discord Bots Developer", { delay: 1200 })
-  .pause(500)
+  .pause(1200)
   .delete(22)
-  .type("Web Developer", { delay: 400 })
-  .pause(500)
-  .delete(9)
+  .type("Web Developer", { delay: 1200 })
+  .pause(1200)
+  .delete(13)
   .go();
 
 new TypeIt("#type2", {
