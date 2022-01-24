@@ -22,6 +22,20 @@ body {
     z-index: 0;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #dd9a05;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9b6b05;
+}
+
 h1,
 h2,
 h3,
