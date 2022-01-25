@@ -653,11 +653,23 @@ li{
 .form .right div input {
     flex: 1 1 50%;
 }
+
+.form input:hover,
+.form input:focus {
+    border-color: #dd9a05;
+    border: 2px solid #dd9a05;
+}
   
 .form textarea {
     width: 100%;
     resize: none;
     margin-bottom: 3rem;
+}
+
+.form textarea:hover,
+.form textarea:focus {
+    border-color: #dd9a05;
+    border: 2px solid #dd9a05;
 }
 
 
@@ -681,6 +693,7 @@ li{
     background-color: #fff;
     color: #000;
     font-weight: bold;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
