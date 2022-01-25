@@ -657,7 +657,9 @@ li{
     flex: 1 1 50%;
 }
 
-.form input:hover,
+.form input:hover {
+    border: 1px;
+}
 .form input:focus {
     border-color: #dd9a05;
     border: 2px solid #dd9a05;
