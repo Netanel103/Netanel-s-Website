@@ -658,7 +658,7 @@ li{
 }
 
 .form input:hover {
-    border: 1px;
+    border: 1px solid #dd9a05;
     border-color: #dd9a05;
 }
 .form input:focus {
