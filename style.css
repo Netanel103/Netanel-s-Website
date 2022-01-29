@@ -350,6 +350,14 @@ li{
     text-align: center;
 }
 
+.title h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    z-index: 0;
+}
+
 .title h1::before,
 .title h1::after {
     content: '';
