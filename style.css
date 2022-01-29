@@ -350,24 +350,24 @@ li{
     text-align: center;
 }
 
-.title h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    display: inline-block;
-    position: relative;
-    z-index: 0;
-}
-
+.title h1::before,
 .title h1::after {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -20%;
+    bottom: -30%;
     transform: translate(-50%, -50%);
     background-color: #dd9a05;
-    width: 50%;
+    width: 60%;
     height: 0.4rem;
     z-index: 1;
+}
+
+.title h1::after {
+    bottom: -50%;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .about-center {
