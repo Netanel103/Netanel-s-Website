@@ -537,6 +537,7 @@ body.dark .navigation.fix-nav .nav-link:hover {
     position: relative;
     bottom: 1%;
     left: -3%;
+    width: 100%;
   }
 }
 
@@ -548,6 +549,7 @@ body.dark .navigation.fix-nav .nav-link:hover {
   .col-1 img {
     position: relative;
     bottom: -3%;
+    width: 100%;
   }
 }
 
