@@ -1,29 +1,92 @@
-AOS.init();
+// nav toggle
 
-const menu = document.querySelector(".menu");
-const navOpen = document.querySelector(".hamburger");
-const navClose = document.querySelector(".close");
+const hamburger = document.querySelector(".hamburger");
+const close = document.querySelector(".close");
+const navList = document.querySelector(".nav-list");
 
-const navLeft = menu.getBoundingClientRect().left;
-navOpen.addEventListener("click", () => {
-  if (navLeft < 0) {
-    menu.classList.add("show");
-    document.body.classList.add("show");
-    navBar.classList.add("show");
+hamburger.addEventListener("click", () => {
+  navList.classList.add("open");
+});
+
+close.addEventListener("click", () => {
+  navList.classList.remove("open");
+});
+
+// theme
+const icons = [...document.querySelectorAll(".theme-icon")];
+icons.forEach((icon) => {
+  if (icon) {
+    icon.addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+
+      if (document.body.classList.contains("dark")) {
+        icon.innerHTML = '<i class="bx bx-sun"></i>';
+        icon.style.color = "white";
+      } else {
+        icon.innerHTML = '<i class="bx bx-moon"></i>';
+        icon.style.color = "#121713";
+      }
+    });
   }
 });
 
-navClose.addEventListener("click", () => {
-  if (navLeft < 0) {
-    menu.classList.remove("show");
-    document.body.classList.remove("show");
-    navBar.classList.remove("show");
-  }
+// colors
+const widget = document.querySelector(".widget");
+const control = document.querySelector(".control");
+
+widget.addEventListener("click", () => {
+  control.classList.toggle("open");
 });
 
-// Fixed Nav
-const navBar = document.querySelector(".nav");
+const colors = [...document.querySelectorAll(".colors span")];
+document.querySelector(":root").style.setProperty("--customColor", "#42caff");
+
+colors.forEach((color) => {
+  color.addEventListener("click", () => {
+    const currentColor = color.dataset.id;
+    document
+      .querySelector(":root")
+      .style.setProperty("--customColor", currentColor);
+    img = document.querySelector(".about-img");
+    if (currentColor === "#ce00ff") {
+      img.src = "images/about-img-purple-2.png";
+    }
+    else if (currentColor === "#7462e1") {
+      img.src ="images/about-img-purple.png";
+    } else if (currentColor === "#ff6174") {
+      img.src = "images/about-img-pink.png";
+    } else if (currentColor === "#ff4600") {
+      img.src = "images/about-img-orange.png";
+    } else if (currentColor === "#42caff") {
+      img.src = "images/about.png";
+    }
+  });
+});
+
+window.addEventListener("scroll", () => {
+  control.classList.remove("open");
+});
+
+// typeit
+
+new TypeIt("#type1", {
+  speed: 150,
+  loop: true,
+  waitUntilVisible: true,
+  breakLines: false,
+})
+  .type("<br><em>Bots Developer</em>", { delay: 400 })
+  .pause(3000)
+  .delete(23)
+  .type("<br><em>Web Developer</em>")
+  .pause(3000)
+  .delete(12)
+  .go();
+
+// fix nav
+const navBar = document.querySelector(".navigation");
 const navHeight = navBar.getBoundingClientRect().height;
+
 window.addEventListener("scroll", () => {
   const scrollHeight = window.pageYOffset;
   if (scrollHeight > navHeight) {
@@ -33,15 +96,40 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// filter projects
+const filterBtn = document.querySelector(".filter-btns");
+const spans = [...document.querySelectorAll(".filter-btns span")];
+const items = [...document.querySelectorAll(".projects .item")];
+
+filterBtn.addEventListener("click", (e) => {
+  const filter = e.target.closest("span");
+  if (!filter) return;
+  const id = filter.dataset.id;
+  spans.forEach((span) => span.classList.remove("active"));
+  filter.classList.add("active");
+  items.forEach((item) => {
+    item.classList.add("hide");
+    item.classList.remove("active");
+    const targetID = item.dataset.id;
+    if (targetID === id) {
+      item.classList.remove("hide");
+      item.classList.add("active");
+    } else if (id === "all") {
+      item.classList.remove("hide");
+    }
+  });
+});
+
 // Scroll To
+
 const links = [...document.querySelectorAll(".scroll-link")];
-links.map(link => {
-  link.addEventListener("click", e => {
+
+links.map((link) => {
+  link.addEventListener("click", (e) => {
     e.preventDefault();
 
     const id = e.target.getAttribute("href").slice(1);
     const element = document.getElementById(id);
-    const fixNav = navBar.classList.contains("fix-nav");
     let position = element.offsetTop - navHeight;
 
     window.scrollTo({
@@ -49,45 +137,21 @@ links.map(link => {
       left: 0,
     });
 
-    navBar.classList.remove("show");
-    menu.classList.remove("show");
-    document.body.classList.remove("show");
+    navList.classList.remove("open");
   });
 });
-
-new TypeIt("#type1", {
-  speed: 120,
-  loop: true,
-  waitUntilVisible: true,
-})
-  .type("Discord Bots Developer", { delay: 1200 })
-  .pause(1200)
-  .delete(22)
-  .type("Web Developer", { delay: 1200 })
-  .pause(1200)
-  .delete(13)
-  .go();
-
-new TypeIt("#type2", {
-  speed: 120,
-  loop: true,
-  waitUntilVisible: true,
-})
-  .type("Discord Bots Developer", { delay: 1200 })
-  .pause(1200)
-  .delete(22)
-  .type("Web Developer", { delay: 1200 })
-  .pause(1200)
-  .delete(13)
-  .go();
 
 gsap.from(".logo", { opacity: 0, duration: 1, delay: 0.5, y: -10 });
 gsap.from(".hamburger", { opacity: 0, duration: 1, delay: 1, x: 20 });
 gsap.from(".banner", { opacity: 0, duration: 1, delay: 1.5, x: -200 });
-gsap.from(".hero h3", { opacity: 0, duration: 1, delay: 2, y: -50 });
-gsap.from(".hero h1", { opacity: 0, duration: 1, delay: 2.5, y: -45 });
-gsap.from(".hero h4", { opacity: 0, duration: 1, delay: 3, y: -30 });
-gsap.from(".hero a", { opacity: 0, duration: 1, delay: 3.5, y: 50 });
+gsap.from(".content h3", { opacity: 0, duration: 1, delay: 2, y: -55 });
+gsap.from(".content h1", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".content h3", { opacity: 0, duration: 1, delay: 2, y: -53 });
+gsap.from(".content span", { opacity: 0, duration: 1, delay: 2, y: -50 });
+gsap.from(".content p", { opacity: 0, duration: 1, delay: 2.5, y: -45 });
+gsap.from(".content h4", { opacity: 0, duration: 1, delay: 3, y: -30 });
+gsap.from(".content a", { opacity: 0, duration: 1, delay: 3, y: 20 });
+gsap.from(".hero-img", { opacity: 0, duration: 1, delay: 4, y: 70 });
 gsap.from(".nav-item", {
   opacity: 0,
   duration: 1,
@@ -95,10 +159,10 @@ gsap.from(".nav-item", {
   y: 30,
   stagger: 0.2,
 });
-gsap.from(".icons span", {
+gsap.from(".socials span", {
   opacity: 0,
   duration: 1,
-  delay: 4,
+  delay: 3,
   x: -30,
   stagger: 0.2,
 });
@@ -122,4 +186,6 @@ if (glide)
         perView: 1,
       },
     },
-}).mount();
+  }).mount();
+
+AOS.init();

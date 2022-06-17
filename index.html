@@ -1,231 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="">
-    <meta name="og:title" content="Netanel's Website" />
-    <meta name="og:description" content="The personal website of Netanel (:" />
-    <meta name="theme-color" content="#5865F2" />
-    <meta property="og:type" content="video.movie" />
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/880003677019062272/a_2b2e0742f9fe9a9cf319e413dc9d7827.gif?size=1024" />
-    <!-- ICON -->
-    <link rel="icon" type="image/png" href="https://images-ext-1.discordapp.net/external/NcRuBA8vCejIJbLMxSxKw0Kq9imTS_VtCXWEK1y3Pdg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/880003677019062272/a_2b2e0742f9fe9a9cf319e413dc9d7827.gif" />
-    <!-- Font Awesome -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons -->
     <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
     <!-- AOS -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
-    <!-- Glidejs -->
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css"
+    />
+        <!-- Glidejs -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css"
     />
-    <link rel="stylesheet" href="style.css">
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
     <title>Netanel's Website</title>
-</head>
-<body>
-    <div id="preloader"></div>
-    <header class="header" id="home">
-        <nav class="nav">
-            <div class="navigation container">
-                <div class="logo">
-                    <h1>Netanel<span>.</span></h1>
-                </div>
-                <div class="menu">
-                    <div class="top-nav">
-                        <div class="logo">
-                            <h1>Netanel<span>.</span></h1>
-                        </div>
-                        <div class="close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <ul class="nav-list">
-                        <li class="nav-item">
-                            <a href="#home" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#services" class="nav-link">My Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#skills" class="nav-link">My Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#contract" class="nav-link">Contact Me</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="hamburger">
-                    <i class="fa fa-bars"></i>
-                </div>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="navigation">
+        <div class="nav-center d-flex">
+          <h2 class="logo d-flex">Netanel
+            <span class="color">.</span>
+          </h2>
+          <ul class="nav-list d-flex">
+            <li class="nav-item"><a href="#header" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#protfolio" class="nav-link">Protfolio</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </li>
+            <!-- theme -->
+            <li class="nav-item theme-icon">
+              <i class="bx bx-moon"></i>
+            </li>
+            <!-- close button -->
+            <div class="close">
+              <i class="bx bx-x"></i>
             </div>
-        </nav>
-        <img class="banner" src="./clement-helardot-95YRwf6CNw8-unsplash.jpg" alt="">
-        <div class="hero">
-            <h3>Hello, My Name Is,</h3>
-            <h1>Netanel</h1>
-            <h4>And I'm a <span id="type1"></span></h4>
-            <a href="#about">About Me</a>
+          </ul>
+          <!-- theme -->
+          <div class="theme theme-icon">
+            <i class="bx bx-moon"></i>
+          </div>
+          <!-- hamburger -->
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
         </div>
+        <!-- overlay -->
+        <div class="overlay"></div>
+        <!-- hero image -->
+        <img src="./images/hero.png" class="hero-img" alt="">
+        <!-- links -->
+        <div class="socials">
+          <span class="icon" ><a href="https://discord.com/users/880003677019062272" target="_blank"><i class='bx bxl-discord'></i></a></span>
+          <span class="icon"><a href="https://github.com/Netanel103/" target="_blank"><i class='bx bxl-github'></i></a></span>
+        </div>
+        <!-- color control -->
+        <div class="control">
+          <div class="widget d-flex">
+            <i class="bx bxs-cog"></i>
+          </div>
+          <div class="colors">
+            <span data-id="#ff6174"></span>
+            <span data-id="#42caff"></span>
+            <span data-id="#7462e1"></span>
+            <span data-id="#ff4600"></span>
+            <span data-id="#ce00ff"></span>
+          </div>
+        </div>
+      </div>
+      <!-- hero -->
+      <div class="content">
+        <span>Hello,</span>
+        <h1>I'm Netanel And I'm a <span id="type1"></span></h1>
+        <p>Also, I Have a Discord Server called <span id="shop">Future Shop</span></p>
+        <!-- open the discord server link in another window -->
+        <a href="https://discord.gg/z8H6NUVAGq" class="btn btn-hero" target="_blank">Join To Future Shop</a>
+      </div>
     </header>
-    <main>
-        <section class="section about" id="about">
+    <!-- about section-->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="about-center d-flex">
+          <div class="col-1" data-aos="fade-right" data-aos-duration="3000">
+            <img src="/images/about.png" class="about-img" alt="">
+          </div>
+          <div class="col-2" data-aos="fade-left" data-aos-duration="3000">
             <div class="title">
-                <h1>About Me</h1>
+              <h1>About Me</h1>
             </div>
-            <div class="about-center container">
-                <div class="left" data-aos="fade-left" data-aos-duration="3000">
-                    <img src="./pankaj-patel-_SgRNwAVNKw-unsplash.jpg" alt="">
-                </div>
-                <div class="right" data-aos="fade-right" data-aos-duration="3000">
-                    <h1>Netanel.</h1>
-                    <h2>I'm a <span id="type2"></span></h2>
-                    <p>I Was Born in 2008.</p>
-                    <p>I joined to discord when i was 12 years old (i didn't knew that was against the discord TOS)...</p>
-                    <p>When i joined discord servers, Bots were my main insterest.</p>
-                    <p>I always wanted to know how they work.</p>
-                    <p>The same goes for websites.</p>
-                    <p>That's The Reason I Started To Learn Programming.</p>
-                    <p>I Learned This All By Myself And By Using Free Courses In YouTube.</p>
-                    <p id="end-of-about-content">And Now, I'm a Web Developer And a Discord Bots Developer.</p>
-                </div>
+            <h3>My Story lol</h3>
+            <p>My age is 14</p>
+            <p>I joined discord 2 years ago</p>
+            <p>When i was staff in israeli discord community servers,</p>
+            <p>I learned about discord bots.</p>
+            <p>The discord bots was my main interest, sounds nerdy right?</p>
+            <p>I learned from the bots a lot about discord,</p>
+            <p>And i always wanted to know how do they works.</p>
+            <p>That's the reason why i started learn programming.</p>
+            <p>My first programming language was Python, maybe you wouldn't like the this language cause your a Python hater,</p>
+            <p>But i like this language and that's what matters lol</p>
+            <p>After learning discord bots development,</p>
+            <p>I started to learn web development.</p>
+            <p>After learning web development, I created this website o_o</p>
+            <p>I also have project called <a class="shop" href="https://discord.gg/z8H6NUVAGq">Future Shop</a>, Feel free to join :)</p>
+            <div class="buttons">
+              <a href="#contact" class="btn">Contact Me</a>
             </div>
-        </section>
-
-        <section class="section theme" id="services">
-            <div class="title">
-                <h1>My Services</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services -->
+    <section class="section services" id="services">
+      <div class="title">
+        <h1>Services</h1>
+      </div>
+      <div class="row container" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col">
+          <div class="icon">
+            <i class="bx bx-code-alt"></i>
+          </div>
+          <span>Future Shop</span>
+          <h3>A Shop For a Lot Of Things...</h3>
+          <p>I created this shop with:</p>
+          <p><a href="https://discord.com/users/789486325396406302" class="services-names" target="_blank">Danielb#0002</a> - a famous discord bot developer and a web developer</p>
+          <p><a href="https://www.youtube.com/channel/UC_i0R4egRQeD0w9aXmpeuWQ" class="services-names" target="_blank">ItsRealZeOri#6969</a> - a YouTuber with more than 2000 subscribers</p>
+          <p><a href="https://discord.com/users/544378114579628054" class="services-names" target="_blank">Ryns#8941</a> - a discord & web developer</p>
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bx-layer"></i>
+          </div>
+          <span>Discord Bots Development</span>
+          <h3>Professional Discord Bots Developer</h3>
+          <p>I can create you everything you want.</p>
+          <p>Whether if its economy system or a moderation system or maybe a community bot (adjusted to community servers)</p>
+          <p>If you want a bot, you can contact me on discord or in the contact section</p>
+        </div>
+      </div>
+    </section>
+    <!-- protfolio -->
+    <section class="section portfolio" id="protfolio">
+      <div class="row container" data-aos="flip-up" data-aos-duration="3000">
+        <div class="title">
+          <h1>Bots Examples <span id="gallery"><br>Gallery</span></h1>
+        </div>
+        <div class="filter-btns d-flex">
+          <span class="active" data-id="all">All</span>
+          <span data-id="shop">Shop</span>
+          <span data-id="fivem">Fivem Bots</span>
+          <span data-id="rank">Rank</span>
+          <span data-id="ticket">Ticket Systems</span>
+          <span data-id="logs">Logs</span>
+          <span data-id="other">Other</span>
+        </div>
+      </div>
+      <div class="projects container" data-aos="flip-down" data-aos-duration="3000">
+        <img data-id="other" src="./images/unknown (1).png" class="item" alt="">
+        <img data-id="shop" src="./images/unknown (2).png" class="item" alt="">
+        <img data-id="logs" src="./images/unknown (3).png" class="item" alt="">
+        <img data-id="ticket" src="./images/unknown (4).png" class="item" alt="">
+        <img data-id="logs" src="./images/unknown (5).png" class="item" alt="">
+        <img data-id="fivem" src="./images/unknown (6).png" class="item" alt="">
+        <img data-id="shop" src="./images/unknown (7).png" class="item" alt="">
+        <img data-id="other" src="./images/unknown (8).png" class="item" alt="">
+        <img data-id="rank" src="./images/unknown (9).png" class="item" alt="">
+        <img data-id="rank" src="./images/unknown-10.png" class="item" alt="">
+      </div>
+    </section>
+    <!-- contact -->
+    <div class="contact-upper" id="contact">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 319"><path  fill-opacity="1" d="M0,224L40,197.3C80,171,160,117,240,101.3C320,85,400,107,480,117.3C560,128,640,128,720,112C800,96,880,64,960,58.7C1040,53,1120,75,1200,80C1280,85,1360,75,1400,69.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+    </div>
+    <section class="section contact">
+      <div class="title">
+        <h1>Contact Me</h1>
+      </div>
+      <div class="contact-center container" >
+        <div class="left" data-aos="fade-down-right" data-aos-duration="3000">
+          <form action="" class="form">
+            <h2>Message Me</h2>
+            <div>
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+              <input type="subject" placeholder="Subject" required>
             </div>
-            <div class="services-center container">
-                <div class="service" data-aos="fade-down" data-aos-duration="3000">
-                    <span><i class="fab fa-accusoft"></i></span>
-                    <h2>Web Develoment</h2>
-                    <p>Started To Learn Web Develoment On August 2021.</p>
-                    <p>I Learned Web Develoment in HTML CSS and Javascript.</p>
-                </div>
-                <div class="service" data-aos="fade-up" data-aos-duration="3000">
-                    <span><i class="fab fa-discord"></i></span>
-                    <h2>Discord Bots Develoment</h2>
-                    <p>Started To Learn Discord Bots Develoment On March 2021.</p>
-                    <p>I learned Discord Bots Develoment in Python.</p>
-                    <p>And I'm Currently Working on a Public Bot Project.</p>
-                </div>
-                <div class="service" data-aos="fade-down" data-aos-duration="3000">
-                    <span><i class="fas fa-gamepad"></i></span>
-                    <h2>Game Develoment</h2>
-                    <p>Right Now I'm Currently Learning Game Develoment in C# and Java.</p>
-                    <p>Stay Tuned!</p>
-            </div>
-            </div>
-        </section>
-
-        <section class="section skills" id="skills">
-            <div class="title">
-                <h1>My Skills</h1>
-            </div>
-
-                        <div class="skills-center container">
-                <div class="skills-left" data-aos="fade-down-right" data-aos-duration="3000">
-                    <div class="skills-box">
-                        <h4>HTML</h4>
-                        <div class="skills-ilt" data-aos="fade-down" data-aos-duration="2000">
-                            <div class="skills-bar html"></div>
-                            <span>90%</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <h4>JavaScript</h4>
-                        <div class="skills-ilt"  data-aos="fade-up" data-aos-duration="2300">
-                            <div class="skills-bar javascript"></div>
-                            <span>78%</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <h4>CSS</h4>
-                        <div class="skills-ilt" data-aos="fade-down" data-aos-duration="2900">
-                            <div class="skills-bar css"></div>
-                            <span>80%</span>
-                        </div>
-                    </div>
-                    <div class="skills-box">
-                        <h4>Python</h4>
-                        <div class="skills-ilt" data-aos="fade-up" data-aos-duration="3000">
-                            <div class="skills-bar python"></div>
-                            <span>94%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="right" data-aos="fade-down-left" data-aos-duration="3000">
-                </div>
-            </div>
-                <div class="right" data-aos="fade-down-left" data-aos-duration="3000">
-                </div>
-            </div>
-        </section>
-
-        <section class="section contract" id="contract">
-            <div class="title">
-                <h1>Contact Me</h1>
-            </div>
-            <div class="contract-center container">
-                <div class="left" data-aos="fade-down-right" data-aos-duration="3000">
-                    <h2>Get In Touch (;</h2>
-                    <p>
-                        Feel free to contact me about anything!
-                    </p>
-                    <div>
-                        <span class="icon"><i class="fas fa-user"></i></span>
-                        <span class="content">
-                            <h3>Name</h3>
-                            <span>Netanel</span>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
-                        <span class="content">
-                            <h3>Address</h3>
-                            <span>In The Earth ig..</span>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="icon"><i class="fas fa-envelope"></i></span>
-                        <span class="content">
-                            <h3>Email</h3>
-                            <span>netanelbatash09@gmail.com</span>
-                        </span>
-                    </div>
-                </div>
-                <div class="right" data-aos="fade-down-left" data-aos-duration="3000">
-                    <form class="form" action="https://formspree.io/f/mrgjeqzy" method="POST">
-                        <h2>Message Me (:</h2>
-                        <div>
-                            <input type="text" name="name" placeholder="Your Name" required>
-                            <input type="email" name="email" placeholder="Your Email" required>
-                            <input type="hidden" name="_gotcha">
-                        </div>
-                        <input type="text" name="subject" placeholder="Subject" required>
-                        <textarea name="message" cols="10" rows="10" placeholder="Your Message" required></textarea>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-            </div>
-       
-        </section>
-        <footer>
-            <p>Created By <span>Netanel.</span>
-            <p>Thanks To <a href="https://github.com/wpcodevo">Codevo</a> For His Tutorials!</p>
-            <p><a href="#home">Home Section</a> Image: Photo by <a href="https://unsplash.com/@clemhlrdt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Clément Hélardot</a> on <a href="https://unsplash.com/s/photos/coding-laptop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-            <p><a href="#about">About Me Section</a> Image: Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/s/photos/code?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a><p>
-          </footer>>
-    </main>
+            <textarea name="message" cols="10" rows="10" placeholder="Description"></textarea>
+            <button type="submit" class="btn btn-form">Send Message</button>
+          </form>
+        </div>
+        <div class="right" data-aos="fade-up-left" data-aos-duration="3000">
+          <div>
+            <span class="icon"><i class="bx bx-user"></i></span>
+            <span class="content">
+              <h3>Name</h3>
+              <span>Netanel</span>
+            </span>
+          </div>
+          <div>
+            <span class="icon"><i class="bx bx-map"></i></span>
+            <span class="content">
+              <h3>Address</h3>
+              <span>You dont need to know..</span>
+            </span>
+          </div>
+          <div>
+            <span class="icon"><i class="bx bx-envelope"></i></span>
+            <span class="content">
+              <h3>Email</h3>
+              <span>netanelbatash09@gmail.com</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <p>Created By Netanel</p>
+    </footer>
+    <!-- Swiper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js"></script>
     <!-- AOS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <!-- Typeit -->
@@ -236,7 +246,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
     <!-- Custom Script -->
     <script src="index.js"></script>
-    <!-- loading screen script -->
-    <script src="loader.js"></script>
-    </body>
+  </body>
 </html>
