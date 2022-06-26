@@ -884,3 +884,41 @@ footer {
   text-align: center;
   border-top: 1px solid var(--borderColor);
 }
+footer{
+  width: 100%;
+  padding: 70px 0;
+  bottom: 0;
+  left: 0;
+  background: #111;
+}
+
+footer .left{
+  display: absolute;
+}
+
+footer .left h1 {
+  margin-right: 90rem;
+  margin-bottom: 1rem;
+  text-decoration: underline var(--customColor) solid;
+}
+
+footer .left ul li {
+  margin-right: 90rem;
+  padding-bottom: 1rem;
+  transition: var(--transition-2);
+}
+
+footer .left ul li:hover {
+  color: var(--customColor);
+  cursor: pointer;
+  transform: translateX(20px);
+}
+
+footer .right {
+  display: absolute;
+}
+
+footer .right h1 {
+  margin-right: 90rem;
+  margin-bottom: 1rem;
+}
