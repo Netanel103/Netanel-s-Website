@@ -30,7 +30,8 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: 62.5%; /* 1.6rem or 16px */
+  font-size: 62.5%;
+  /* 1.6rem or 16px */
 }
 
 body {
@@ -159,9 +160,11 @@ body.dark .navigation.fix-nav .nav-link:hover {
 .navigation.fix-nav .logo span.color {
   color: #000;
 }
+
 .navigation.fix-nav .logo:hover {
   color: black;
 }
+
 .navigation.fix-nav .nav-link:hover {
   color: white;
 }
@@ -252,6 +255,7 @@ body.dark .navigation.fix-nav .nav-link:hover {
   .header {
     min-height: 100vh;
   }
+
   .hero-img {
     right: -30%;
     bottom: -5%;
@@ -344,9 +348,11 @@ body.dark .navigation.fix-nav .nav-link:hover {
 .control .colors span:nth-child(1) {
   background-color: var(--pinkColor);
 }
+
 .control .colors span:nth-child(2) {
   background-color: var(--blueColor-3);
 }
+
 .control .colors span:nth-child(3) {
   background-color: var(--blueColor-1);
 }
@@ -354,6 +360,7 @@ body.dark .navigation.fix-nav .nav-link:hover {
 .control .colors span:nth-child(4) {
   background-color: var(--orange);
 }
+
 .control .colors span:nth-child(5) {
   background-color: var(--purple);
 }
@@ -369,15 +376,18 @@ body.dark .navigation.fix-nav .nav-link:hover {
   color: var(--grey);
   transition: var(--transition-2);
 }
+
 .header .content h1 {
   font-size: 5rem;
   font-weight: 700;
 }
+
 .header .content h1 span {
   color: var(--customColor);
   font-weight: 700;
   transition: var(--transition-2);
 }
+
 .header .content p {
   color: var(--grey);
   width: 80%;
@@ -428,15 +438,19 @@ body.dark .navigation.fix-nav .nav-link:hover {
     top: 25%;
     left: 5%;
   }
+
   .header .content span {
     font-size: 1.5rem;
   }
+
   .header .content h1 {
     font-size: 4rem;
   }
+
   .header .content h1 span {
     font-size: 4rem;
   }
+
   .header .content .btn {
     padding: 0.8rem 3rem;
   }
@@ -450,13 +464,16 @@ body.dark .navigation.fix-nav .nav-link:hover {
   .header .content h1 {
     font-size: 3rem;
   }
+
   .header .content p {
     font-size: 1.5rem;
     width: 90%;
   }
+
   .header .content h1 span {
     font-size: 3rem;
   }
+
   .header .content .btn-hero {
     margin-top: 2rem;
   }
@@ -680,6 +697,7 @@ body.dark .services .row .col:hover {
 .projects .item.hide {
   display: none;
 }
+
 .projects .item.show {
   animation: animate 0.4s ease;
 }
@@ -687,6 +705,7 @@ body.dark .services .row .col:hover {
 .portfolio .projects .item.hide {
   display: none;
 }
+
 .portfolio .projects .item.active {
   display: block;
 }
@@ -696,15 +715,18 @@ body.dark .services .row .col:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   .portfolio .title {
     margin-bottom: 0;
     text-align: center;
   }
+
   .projects .filter-btns {
     display: inline-block;
     padding: 1.5rem 0;
     margin-bottom: 2rem;
   }
+
   .portfolio .projects {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -714,6 +736,7 @@ body.dark .services .row .col:hover {
   .portfolio .filter-btns {
     align-items: flex-start;
   }
+
   .portfolio .filter-btns span {
     font-size: 1.5rem;
     display: inherit;
