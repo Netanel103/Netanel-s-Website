@@ -25,6 +25,10 @@
   --transition-2: all 500ms ease-in-out;
 }
 
+::selection {
+  background-color: #6c6c6d;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 
 html {
