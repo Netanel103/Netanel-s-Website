@@ -693,6 +693,8 @@ body.dark .services .row .col:hover {
 
 .portfolio .projects {
   display: grid;
+  width: calc(100% / 4);
+  padding: 7px;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 3rem;
